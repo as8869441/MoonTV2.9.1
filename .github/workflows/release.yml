@@ -1,9 +1,9 @@
 name: Release
 
-on:
-  push:
-    tags:
-      - 'v*' # 当推送以 'v' 开头的标签时触发
+#on:
+ # push:
+   # tags:
+    #  - 'v*' # 当推送以 'v' 开头的标签时触发
 
 permissions:
   contents: write # 给 release 创建权限
@@ -65,3 +65,4 @@ jobs:
           name: build-files
           path: .next/
           retention-days: 30
+
